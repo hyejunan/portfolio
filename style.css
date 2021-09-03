@@ -8,10 +8,10 @@
 
     /* Font size */
     --font-large: 36px;
-    --font-medium: 28px;
+    --font-medium: 24px;
     --font-regular: 18px;
-    --font-small: 16px;
-    --font-micro: 14px;
+    --font-small: 14px;
+    --font-micro: 12px;
 
     /* Font weight */
     --weight-bold: 700;
@@ -25,6 +25,21 @@
 * {
     box-sizing: border-box;
     font-family: 'Domine', serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+ul, ol {
+    list-style: none;
+    padding-left: 0;
 }
 
 /* Typography */
@@ -45,4 +60,36 @@ p {
 .font__caveat {
     font-family: 'Caveat', cursive;
     font-size: var(--font-large);
+}
+
+/* Navbar */
+
+#navbar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    border-right: 1px solid var(--color-grey);
+    overflow: auto;
+    padding: 40px 60px;
+}
+
+.navbar__menu {
+    font-size: var(--font-medium);
+    height: 100%;
+    text-align: center;
+}
+
+.navbar__menu__item {
+    padding: 20px 10px;
+}
+
+.navbar__logo img {
+    padding: 40px 0;
+    width: 120px;
+}
+
+.navbar__copyright {
+    font-size: var(--font-micro);
+    position: sticky;
+    bottom: 0;
 }
