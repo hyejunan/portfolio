@@ -7,7 +7,7 @@
     --color-black: #000000;
 
     /* Font size */
-    --font-large: 48px;
+    --font-large: 36px;
     --font-medium: 28px;
     --font-regular: 18px;
     --font-small: 16px;
@@ -24,4 +24,25 @@
 /* Universal tags */
 * {
     box-sizing: border-box;
+    font-family: 'Domine', serif;
+}
+
+/* Typography */
+h2 {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+    margin: 16px 0;
+}
+
+p {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+    margin: 4px 0;
+}
+
+.font__caveat {
+    font-family: 'Caveat', cursive;
+    font-size: var(--font-large);
 }
