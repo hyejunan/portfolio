@@ -19,7 +19,8 @@
     --weight-semi-bold: 600;
     --weight-regular: 400;
 
-    /* Size */
+    /* Annimation */
+    --animation-duration: 300ms;
 }
 
 /* Universal tags */
@@ -47,6 +48,7 @@ section {
     height: 100vh;
     margin: 0;
     padding: 65px 90px;
+    text-align: center;
 }
 
 div {
@@ -90,7 +92,7 @@ p {
 }
 
 .navbar__menu {
-    font-size: var(--font-medium);
+    font-size: var(--font-regular);
     height: 100%;
     text-align: center;
 }
@@ -142,6 +144,9 @@ section {
 }
 
 .about__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px 20px;
 }
 
@@ -229,4 +234,89 @@ section {
 /* Projects */
 #projects {
     background-color: var(--color-grey);
+    text-align: center;
+}
+
+.project__categories {
+    padding: 20px 40px;
+}
+
+.category__btn:hover,
+.category__btn.active {
+    color: var(--color-black);
+    letter-spacing: 2px;
+    transition: all var(--animation-duration) ease-in;
+}
+
+.category__btn.active .category__cnt,
+.category__btn:hover .category__cnt {
+    opacity: 1;
+    top: -10px
+}
+
+.category__btn {
+    border: none;
+    color: var(--color-dark-grey);
+    font-size: var(--font-regular);
+    background-color: var(--color-grey);
+    padding: 0 20px
+}
+
+.category__cnt {
+    font-size: var(--font-micro);
+    display: inline-block;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    top:-20px;
+    left: -2px;
+    opacity: 0;
+    transition: all var(--animation-duration) ease-in;
+}
+
+.work__projects {
+    padding: 40px 60px;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.work__projects img {
+    width: 250px;
+    border-radius: 4px;
+}
+
+.project {
+    margin-left: 20px;
+    position: relative;
+}
+
+.project__desc {
+    position: absolute;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all var(--animation-duration) ease-in;
+}
+
+.project:hover .project__desc {
+    opacity: 0.7;
+    transform: translateY(0px);
+}
+
+.project__desc h3, .project__desc span{
+    color: var(--color-white);
 }
