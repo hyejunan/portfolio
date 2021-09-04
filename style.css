@@ -42,12 +42,25 @@ ul, ol {
     padding-left: 0;
 }
 
+section {
+    height: 100vh;
+    margin: 0;
+    padding: 65px 90px;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
 /* Typography */
 h2 {
     font-size: var(--font-medium);
     font-weight: var(--weight-regular);
     color: var(--color-black);
     margin: 16px 0;
+    text-align: center;
+    padding: 10px 0;
 }
 
 p {
@@ -60,6 +73,8 @@ p {
 .font__caveat {
     font-family: 'Caveat', cursive;
     font-size: var(--font-large);
+    padding-top: 40px;
+    border-top: 1px solid var(--color-grey);
 }
 
 /* Navbar */
@@ -93,3 +108,54 @@ p {
     position: sticky;
     bottom: 0;
 }
+
+/* About */
+#about {
+    background-color: var(--color-light-grey);
+}
+
+.about__box {
+    display: flex;
+    padding: 20px 0;
+}
+
+.about__desc {
+    width: 70%;
+    margin-right: 40px;
+    font-size: var(--font-regular)
+}
+
+.about__contact {
+    padding: 10px 20px;
+}
+
+.about__contact a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.about__contact i {
+    font-size: var(--font-regular);
+}
+
+
+.about__edu {
+    border-left: 1px solid var(--color-grey);
+    padding-left: 20px;
+}
+
+.about__edu__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about__edu__item-desc {
+    line-height: 25px;
+}
+
+.about__edu__item-date {
+    font-size: var(--font-micro);
+    margin-right: 35px;
+}
+
