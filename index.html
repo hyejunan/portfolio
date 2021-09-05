@@ -57,54 +57,75 @@
                 <div class="col-12">
                     <section id="about" class="section">
                         <div class="section__container">
-                            <h2 class="col-12">About me</h2>
+                            <h2 class="col-12 section__title">About me</h2>
                             <h2 class="font__caveat col-12">Hello, I am Hyejun An</h2>
-                            <div class="about__box col-12">
+                            <div class="about__container row">
+                                <div class="about__img col-4">
+                                    <img src="imgs/profile.jpg" alt="Jun's profile photo" class="contact__avatar">
+                                </div>
                                 <div class="about__desc col-8">
                                     <p>
                                         I’m currently studying Computer programming at Seneca College in Toronto, Canada. I'm dreaming of becoming a front-end developer. I have a goal-oriented personality. When there is a problem, I don't give up easily and do it until the end. My goal is to become a full-stack developer by studying steadily after my career as a Front-end developer.
                                     </p>
                                 </div>
-                                <div class="about__contact col-4">
-                                    <a href="">
-                                        <i class="far fa-envelope"> Email</i>
-                                    </a>
-                                    <a href="">
-                                        <i class="fab fa-github-square"> GitHub</i>
-                                    </a>
-                                    <a href="">
-                                        <i class="fab fa-linkedin"> LinkedIn</i>
-                                    </a>
-                                    
-                                </div>
                             </div>
-                            <div class="about__edu">
-                                <ol>
+
+                            <div class="about__contact col-12">
+                                <a href="">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                                <a href="">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                            <div class="about__edu col-12">
+                                <div class="about__edu__title col-5">
+                                    Education
+                                </div>
+                                <ol class="about__edu__container col-7">
                                     <li class="about__edu__item">
-                                        <div class="about__edu__item-date">
-                                            2021.01 - 2022.08
+                                        <div class="about__edu__item-title">
+                                            <b>Seneca College / Diploma</b>  
                                         </div>
-                                        <div class="about__edu__item-desc">
-                                            <b>Seneca College - Toronto, Canada </b>  <br>
-                                            Computer Programming(Diploma)
+                                        <div class="about__edu__item-date">
+                                            2021.01 - 2022.08 (expected) | Toronto, Canada
+                                        </div>
+                                        <div class="about__edu__item-major">
+                                            Computer Programming
+                                        </div>
+                                        <div class="about__edu__item-etc">
+                                            <ul>
+                                                <li>&#8226; Summer 2021 - President's Honour List</li>
+                                                <li>&#8226; Winter 2021 - President's Honour List</li>
+                                            </ul>
                                         </div>
                                     </li>
                                     <li class="about__edu__item">
-                                        <div class="about__edu__item-date">
-                                            2020.07 - 2021.03
+                                        <div class="about__edu__item-title">
+                                            <b>42 Seoul</b>  
                                         </div>
-                                        <div class="about__edu__item-desc">
-                                            <b>42 Seoul - Seoul, Korea </b> <br>
+                                        <div class="about__edu__item-date">
+                                            2020.07 - 2021.03 | Seoul, Korea
+                                        </div>
+                                        <div class="about__edu__item-major">
                                             Experience a project-based coding learning system
                                         </div>
                                     </li>
                                     <li class="about__edu__item">
-                                        <div class="about__edu__item-date">
-                                            2012.03 - 2018.08
+                                        <div class="about__edu__item-title">
+                                            <b>Ewha Woman’s University</b>  
                                         </div>
-                                        <div class="about__edu__item-desc">
-                                            <b>Ewha Woman’s University - Seoul, Korea</b>  <br>
-                                            Nutritional Science & Food Management(Major),
+                                        <div class="about__edu__item-date">
+                                            2012.03 - 2018.08 | Seoul, Korea
+                                        </div>
+                                        <div class="about__edu__item-major">
+                                            Nutritional Science & Food Management(Major) <br>
                                             Convergence Design(Minor)
                                         </div>
                                     </li>
@@ -118,90 +139,93 @@
 
             <!-- Skills -->
             <div class="row">
-                <section id="skills" class="section section__container">
-                    <h2>Skills</h2>
-                    <h2 class="font__caveat">
-                        Passion for learning new technologies
-                    </h2>
-                    <p>
-                        Capable of working within a team environment and independently. Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed
-                    </p>
-                    <div class="skillset">
-                        <div class="skillset__left">
-                            <h3 class="skillset__title">Skills</h3>
-                            <div class="skill">
-                                <div class="skill__desc">
-                                    <span>HTML/CSS</span>
-                                    <span>90%</span>
+                <div class="col-12">
+                    <section id="skills" class="section section__container">
+                        <h2 class="col-12 section__title">Skills</h2>
+                        <h2 class="col-12 font__caveat">
+                            Passion for learning new technologies
+                        </h2>
+                        <p>
+                            Capable of working within a team environment and independently. <br> Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed.
+                        </p>
+                        <div class="col-12 skillset">
+                            <div class="col-8 skillset__left">
+                                <h3 class="skillset__title">Skills</h3>
+                                <div class="skill">
+                                    <div class="skill__desc">
+                                        <span>HTML/CSS</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="skill__bar">
+                                        <div class="skill__value" style="width: 90%"></div>
+                                    </div>
                                 </div>
-                                <div class="skill__bar">
-                                    <div class="skill__value" style="width: 90%"></div>
+                                <div class="skill">
+                                    <div class="skill__desc">
+                                        <span>JavaScript</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="skill__bar">
+                                        <div class="skill__value" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill__desc">
+                                        <span>C</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="skill__bar">
+                                        <div class="skill__value" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill__desc">
+                                        <span>C++</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="skill__bar">
+                                        <div class="skill__value" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill__desc">
+                                        <span>Java</span>
+                                        <span>60%</span>
+                                    </div>
+                                    <div class="skill__bar">
+                                        <div class="skill__value" style="width: 60%"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="skill">
-                                <div class="skill__desc">
-                                    <span>JavaScript</span>
-                                    <span>85%</span>
+                            <div class="col-4 skillset__right">
+                                <div class="tools">
+                                    <h3 class="skillset__title">Tools</h3>
+                                    <ul class="tools__list">
+                                        <li><span>Visual Studio Code</span></li>
+                                        <li><span>IntelliJ</span></li>
+                                        <li><span>Vim</span></li>
+                                        <li><span>Figma</span></li>
+                                        <li><span>Adobe Premier</span></li>
+                                    </ul>
                                 </div>
-                                <div class="skill__bar">
-                                    <div class="skill__value" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill__desc">
-                                    <span>C</span>
-                                    <span>70%</span>
-                                </div>
-                                <div class="skill__bar">
-                                    <div class="skill__value" style="width: 70%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill__desc">
-                                    <span>C++</span>
-                                    <span>70%</span>
-                                </div>
-                                <div class="skill__bar">
-                                    <div class="skill__value" style="width: 70%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill__desc">
-                                    <span>Java</span>
-                                    <span>60%</span>
-                                </div>
-                                <div class="skill__bar">
-                                    <div class="skill__value" style="width: 60%"></div>
+                                <div class="etc">
+                                    <h3 class="skillset__title">Etc</h3>
+                                    <ul class="etc__list">
+                                        <li><span>Git</span></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="skillset__right">
-                            <div class="tools">
-                                <h3 class="skillset__title">Tools</h3>
-                                <ul class="tools__list">
-                                    <li><span>Visual Studio Code</span></li>
-                                    <li><span>IntelliJ</span></li>
-                                    <li><span>Vim</span></li>
-                                    <li><span>Figma</span></li>
-                                    <li><span>Adobe Premier</span></li>
-                                </ul>
-                            </div>
-                            <div class="etc">
-                                <h3 class="skillset__title">Etc</h3>
-                                <ul class="etc__list">
-                                    <li><span>Git</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
+
             </div>
 
             <!-- Projects -->
             <div class="row">
                 <section id="projects" class="section">
                     <div class="section__container">
-                        <h2>Projects</h2>
+                        <h2 class="section__title">Projects</h2>
                         <h2 class="font__caveat">
                             What I've done
                         </h2>
@@ -264,16 +288,22 @@
             <!-- Contact -->
             <div class="row">
                 <section id="contact" class="section__container">
-                    <h2>Contact</h2>
+                    <h2 class="section__title">Contact</h2>
                     <h2 class="font__caveat">
                         Let's talk!
                     </h2>
                     <div class="contact__container">
                         <img src="imgs/profile.jpg" alt="Jun's profile photo" class="contact__avatar">
-                        <div class="contact__item">
-                            <a href="">Email</a>
-                            <a href="">GitHub</a>
-                            <a href="">LinkedIn</a>
+                        <div class="contact__items col-4">
+                            <a href="">
+                                <i class="far fa-envelope"> Email</i>
+                            </a>
+                            <a href="">
+                                <i class="fab fa-github-square"> GitHub</i>
+                            </a>
+                            <a href="">
+                                <i class="fab fa-linkedin"> LinkedIn</i>
+                            </a>
                         </div>
                     </div>
                 </section>
