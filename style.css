@@ -73,24 +73,6 @@ p {
     padding-top: 20px;
 }
 
-/* Screen commen */
-
-.screen {
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-    display: flex;
-}
-.screen__left {
-    margin: auto;
-    flex-basis: 30%;
-}
-
-.screen__right {
-    margin: auto;
-    flex-basis: 70%;
-}
-
 /* Navbar */
 
 #navbar {
@@ -189,6 +171,7 @@ p {
 /* About */
 #about {
     margin-top: 100px;
+    background-color: var(--color-light-grey);
 }
 .about__container {
     padding: 40px 60px;
@@ -266,7 +249,7 @@ p {
 .skillset {
     text-align: center;
     display: flex;
-    padding: 20px 40px;
+    padding: 40px;
     margin-bottom: 40px;
 }
 
@@ -282,6 +265,7 @@ p {
 
 .skillset__title {
     font-size: var(--font-regular);
+    margin-bottom: 16px;
 }
 
 .skill__desc {
