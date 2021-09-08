@@ -38,99 +38,107 @@
                         </div>
                         <div class="navbar__menu__container ">
                             <ul class="navbar__menu">
-                                <li class="navbar__menu__item active spread-underline">About</li>
-                                <li class="navbar__menu__item spread-underline">Skills</li>
-                                <li class="navbar__menu__item spread-underline">Projects</li>
-                                <li class="navbar__menu__item spread-underline">Contact</li>
+                                <li class="navbar__menu__item active spread-underline" data-link="#about">About</li>
+                                <li class="navbar__menu__item spread-underline" data-link="#skills">Skills</li>
+                                <li class="navbar__menu__item spread-underline" data-link="#projects">Projects</li>
+                                <li class="navbar__menu__item spread-underline" data-link="#contact">Contact</li>
                             </ul>
                         </div>
                 </div>
             </div>
         </div>
     </nav>
+    
+    <!-- Toggle button -->
+    <button>button</button>
+                <button class="navbar__toggle-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+
 
     <!-- About -->
     <section id="about" class="section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                        <div class="section__container">
-                            <h2 class="col-12 section__title">About me</h2>
-                            <h2 class="col-12 font__caveat">Hello, I am Hyejun An</h2>
-                            <div class="about__container row">
-                                <div class="about__img col-12 col-sm-12 col-md-5">
-                                    <img src="imgs/profile.jpg" alt="Jun's profile photo" class="contact__avatar">
-                                </div>
-                                <div class="about__desc col-12 col-sm-12 col-md-7">
-                                    <p>
-                                        I’m currently studying Computer programming at Seneca College in Toronto, Canada. I'm dreaming of becoming a front-end developer. I have a goal-oriented personality. When there is a problem, I don't give up easily and do it until the end. My goal is to become a full-stack developer by studying steadily after my career as a Front-end developer.
-                                    </p>
-                                </div>
+                    <div class="section__container">
+                        <h2 class="col-12 section__title">About me</h2>
+                        <h2 class="col-12 font__caveat">Hello, I am Hyejun An</h2>
+                        <div class="about__container row">
+                            <div class="about__img col-12 col-sm-12 col-md-5">
+                                <img src="imgs/profile.jpg" alt="Jun's profile photo" class="contact__avatar">
                             </div>
-
-                            <div class="about__contact col-12">
-                                <a href="">
-                                    <i class="fas fa-phone"></i>
-                                </a>
-                                <a href="">
-                                    <i class="far fa-envelope"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                            <div class="about__edu">
-                                <div class="about__edu__title col-12 col-md-4">
-                                    Education
-                                </div>
-                                <div class="about__edu__container col-12 col-md-8">
-                                        <div class="about__edu__item">
-                                            <div class="about__edu__item-title">
-                                                <b>Seneca College / Diploma</b>  
-                                            </div>
-                                            <div class="about__edu__item-date">
-                                                2021.01 - 2022.08 (expected) | Toronto, Canada
-                                            </div>
-                                            <div class="about__edu__item-major">
-                                                Computer Programming
-                                            </div>
-                                            <div class="about__edu__item-etc">
-                                                <ul>
-                                                    <li>&#8226; Summer 2021 - President's Honour List</li>
-                                                    <li>&#8226; Winter 2021 - President's Honour List</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="about__edu__item">
-                                            <div class="about__edu__item-title">
-                                                <b>42 Seoul</b>  
-                                            </div>
-                                            <div class="about__edu__item-date">
-                                                2020.07 - 2021.03 | Seoul, Korea
-                                            </div>
-                                            <div class="about__edu__item-major">
-                                                Experience a project-based coding learning system
-                                            </div>
-                                        </div>
-                                        <div class="about__edu__item">
-                                            <div class="about__edu__item-title">
-                                                <b>Ewha Woman’s University</b>  
-                                            </div>
-                                            <div class="about__edu__item-date">
-                                                2012.03 - 2018.08 | Seoul, Korea
-                                            </div>
-                                            <div class="about__edu__item-major">
-                                                Nutritional Science & Food Management(Major) <br>
-                                                Convergence Design(Minor)
-                                            </div>
-                                        </div>
-                                    
-                                </div>
+                            <div class="about__desc col-12 col-sm-12 col-md-7">
+                                <p>
+                                    I’m currently studying Computer programming at Seneca College in Toronto, Canada. I'm dreaming of becoming a front-end developer. I have a goal-oriented personality. When there is a problem, I don't give up easily and do it until the end. My goal is to become a full-stack developer by studying steadily after my career as a Front-end developer.
+                                </p>
                             </div>
                         </div>
+
+                        <div class="about__contact col-12">
+                            <a href="">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                            <a href="">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <div class="about__edu">
+                            <div class="about__edu__title">
+                                <span>Education</span>
+                            </div>
+                            <div class="about__edu__container">
+                                    <div class="about__edu__item">
+                                        <div class="about__edu__item-title">
+                                            <b>Seneca College / Diploma</b>  
+                                        </div>
+                                        <div class="about__edu__item-date">
+                                            2021.01 - 2022.08 (expected) | Toronto, Canada
+                                        </div>
+                                        <div class="about__edu__item-major">
+                                            Computer Programming
+                                        </div>
+                                        <div class="about__edu__item-etc">
+                                            <ul>
+                                                <li>&#8226; Summer 2021 - President's Honour List</li>
+                                                <li>&#8226; Winter 2021 - President's Honour List</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="about__edu__item">
+                                        <div class="about__edu__item-title">
+                                            <b>42 Seoul</b>  
+                                        </div>
+                                        <div class="about__edu__item-date">
+                                            2020.07 - 2021.03 | Seoul, Korea
+                                        </div>
+                                        <div class="about__edu__item-major">
+                                            Experience a project-based coding learning system
+                                        </div>
+                                    </div>
+                                    <div class="about__edu__item">
+                                        <div class="about__edu__item-title">
+                                            <b>Ewha Woman’s University</b>  
+                                        </div>
+                                        <div class="about__edu__item-date">
+                                            2012.03 - 2018.08 | Seoul, Korea
+                                        </div>
+                                        <div class="about__edu__item-major">
+                                            Nutritional Science & Food Management(Major) <br>
+                                            Convergence Design(Minor)
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -331,9 +339,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 footer__container">
-                    <h5 class="footer__copyright">
+                    <p class="footer__copyright">
                         © 2021 Hyejun An. All Rights Reserved
-                    </h5>
+                    </p>
                 </div>
             </div>
         </div>
