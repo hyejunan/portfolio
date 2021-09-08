@@ -6,6 +6,19 @@ navbarMenu.addEventListener('click', (event) => {
     if(link == null) {
         return;
     }
-    const scrollTo = document.querySelector(link);
+    scrollIntoView(link);
+    
+});
+
+// Make home slowly fade to transparent as the window scroll down
+const home = document.querySelector('#home');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', ()=> {
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+
+function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: 'smooth'});
-})
+}
