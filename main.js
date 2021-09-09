@@ -7,14 +7,13 @@ navbarMenu.addEventListener('click', (event) => {
         return;
     }
     scrollIntoView(link);
-    
 });
 
-// Make home slowly fade to transparent as the window scroll down
-const home = document.querySelector('#home');
-const homeHeight = home.getBoundingClientRect().height;
+// Make about slowly fade to transparent as the window scroll down
+const about = document.querySelector('#about');
+const aboutHeight = about.getBoundingClientRect().height;
 document.addEventListener('scroll', ()=> {
-    home.style.opacity = 1 - window.scrollY / homeHeight;
+    about.style.opacity = 1.25 - window.scrollY / aboutHeight;
 });
 
 

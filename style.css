@@ -171,12 +171,17 @@ p {
 
 /* Toggle button */
 .navbar__toggle-btn {
+    position: absolute;
+    top: 30px;
+    right: 32px;
     color: var(--color-black);
+    font-size: var(--font-medium);
+    display: none;
 }
 
 /* Section Common */
 .section {
-    padding: 40px 0;
+    padding: 20px 0;
     text-align: center;
     margin: auto;
 }
@@ -195,11 +200,11 @@ p {
 
 /* About */
 #about {
-    padding-top: 120px;
+    padding-top: 110px;
     background-color: var(--color-light-grey);
 }
 .about__container {
-    padding: 40px 60px;
+    padding: 60px;
     justify-content: space-between;
     align-items: center;
 }
@@ -269,6 +274,10 @@ p {
 
 /* Skills */
 
+#skills {
+    padding: 80px 0;
+}
+
 #skills p {
     padding: 20px 80px;
     text-align: center;
@@ -326,6 +335,7 @@ p {
 
 /* Projects */
 #projects {
+    padding-top: 80px;
     background-color: var(--color-grey);
     text-align: center;
 }
@@ -420,7 +430,27 @@ p {
 /* Contact */
 
 #contact  {
+    padding-top: 40px;
+    text-align: center;
+}
 
+#contact i {
+    display: inline-block;
+    font-size: var(--font-large);
+    padding: 40px;
+}
+
+#contact i {
+    transition: all var(--animation-duration) ease-in;
+}
+
+#contact i:hover {
+    transform: rotate(-4deg) scale(1.3);
+}
+
+.contact__container {
+    width: 100%;
+    justify-content: space-between;
     text-align: center;
 }
 
@@ -437,13 +467,48 @@ p {
 
 
 
-
-
-
 /* For below 768px screen width */
 
 @media screen and (max-width: 768px) {
+    #navbar {
+        height: 86.75px;
+    }
 
+    .navbar__toggle-btn {
+        display: block;
+    }
 
+    .navbar__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar__logo img{
+        position: absolute;
+        display: none;
+    }
+    .navbar__menu {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
 
+    .about__edu__item {
+        text-align: center;
+    }
+
+    .skillset {
+        flex-direction: column;
+    }
+
+    .skillset__left {
+        border-right: none;
+    }
+
+    .project__categories {
+        flex-direction: column;
+    }
+    .project-cate {
+        padding: 8px 0;
+    }
 }
