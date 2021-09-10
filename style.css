@@ -57,6 +57,9 @@ input,
 textarea {
     font-family: 'Domine', serif;
     font-size: var(--font-regular);
+    outline: none;
+    box-shadow: none;
+    appearance: none;
 }
 
 button:focus,
@@ -130,6 +133,7 @@ p {
 }
 
 .navbar__logo img {
+    cursor: pointer;
     width: 120px;
     transition: all var(--animation-duration) ease-in;
 }
@@ -361,6 +365,7 @@ p {
 }
 
 .category__btn {
+    cursor: pointer;
     border: none;
     color: var(--color-dark-grey);
     font-size: var(--font-regular);
@@ -381,7 +386,7 @@ p {
     top:-20px;
     left: -2px;
     opacity: 0;
-    transition: all var(--animation-duration) ease-in;
+    transition: all var(--animation-duration) ease-out;
 }
 
 .work__projects {
@@ -390,6 +395,7 @@ p {
     justify-content: center;
     white-space: nowrap;
     overflow-x: scroll;
+    transition: all var(--animation-duration) ease-in;
 }
 
 .work__projects img {
@@ -397,9 +403,17 @@ p {
     border-radius: 4px;
 }
 
+.work__projects.anim-out {
+    opacity: 0;
+    transform: scale(0.96) translateY(40px);
+}
 .project {
     margin-left: 20px;
     position: relative;
+}
+
+.project.invisible {
+    display: none;
 }
 
 .project__desc {
@@ -465,6 +479,28 @@ p {
     text-align: center;
 }
 
+.arrow-up {
+    position: fixed;
+    bottom: 50px;
+    right:50px;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    color: var(--color-white);
+    background-color: var(--color-dark-grey);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--animation-duration) ease-in;
+}
+
+.arrow-up.visible {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: auto;
+}
 
 
 /* For below 768px screen width */

@@ -16,6 +16,50 @@ document.addEventListener('scroll', ()=> {
     about.style.opacity = 1.25 - window.scrollY / aboutHeight;
 });
 
+// Show "arrow up" button when scrolling down
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if(window.scrollY > aboutHeight/2) {
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+    }
+});
+
+// Handle click on the "arrow up" button
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#about');
+});
+
+// Handle click on the logo 
+const logo = document.querySelector('.navbar__logo');
+logo.addEventListener('click', () => {
+    scrollIntoView('#about');
+});
+
+// Projects
+const pjBtnContainer = document.querySelector('.project__categories');
+const pjContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+
+pjBtnContainer.addEventListener('click', ()=>{
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if(filter == null) {
+        return;
+    }
+    pjContainer.classList.add('anim-out');
+    setTimeout(() => {
+        projects.forEach((project) => {
+            if(filter === '*' || filter === project.dataset.type) {
+                project.classList.remove('invisible');
+            } else {
+                project.classList.add('invisible');
+            }
+        });
+        pjContainer.classList.remove('anim-out');
+    }, 300);
+});
+
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
