@@ -179,10 +179,10 @@ p {
 /* Toggle button */
 .navbar__toggle-btn {
     position: absolute;
-    top: 24px;
-    right: 32px;
+    top: 20px;
+    right: 24px;
     color: var(--color-black);
-    font-size: var(--font-medium);
+    font-size: var(--font-regular);
     display: none;
 }
 
@@ -509,8 +509,79 @@ p {
 /* For below 768px screen width */
 
 @media screen and (max-width: 768px) {
-    #navbar {
+    h2 {
+        font-size: var(--font-regular);
+        font-weight: var(--weight-regular);
+        color: var(--color-black);
+        margin: 16px 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    p {
+        font-size: var(--font-small);
+        font-weight: var(--weight-regular);
+        color: var(--color-black);
+        margin: 4px 0;
+    }
+    
+    .font__caveat {
+        font-family: 'Caveat', cursive;
+        font-size: var(--font-medium);
+        padding-top: 20px;
+    }
+
+    .section {
+        padding: 16px 0;
+        text-align: center;
+        margin: auto;
+    }
+
+    #about {
+        padding-top: 100px;
+    }
+    .about__container {
         padding: 16px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .about__img img {
+        width: 200px;
+        border-radius: 50%;
+        border: 10px solid var(--color-light-grey);
+    }
+
+    .about__desc p {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .about__edu__title {
+        font-size: var(--font-regular);
+    }
+    .about__edu__item-major, 
+    .about__edu__item-etc,
+    .about__edu__item-title  {
+        font-size: var(--font-small);
+    }
+    
+    .about__edu__item-date {
+        font-size: var(--font-micro);
+        margin-bottom: 4px;
+    }
+
+    .about__contact {
+        margin: 16px 0;
+        font-size: var(--font-regular);
+    }
+
+    .about__contact a {
+        margin: 0 16px;
+    }
+
+    #navbar {
+        padding: 8px 0;
     }
 
     .navbar__toggle-btn {
@@ -521,9 +592,9 @@ p {
         justify-content: center;
     }
     .navbar__logo img{
-        padding-top: 8px;
+        padding-top: 10px;
         padding-bottom: 6px;
-        width: 100px;
+        width: 80px;
     }
     .navbar__menu {
         width: 100%;
@@ -544,12 +615,26 @@ p {
         text-align: center;
     }
 
+    #skills {
+        padding: 16px 0;
+    }
+
+    #skills p {
+        padding: 20px 0;
+    }
+
     .skillset {
         flex-direction: column;
+        padding: 16px;
     }
 
     .skillset__left {
+        padding: 0;
         border-right: none;
+    }
+
+    .skillset__title {
+        font-size: 16px;
     }
 
     .project__categories {
@@ -557,5 +642,35 @@ p {
     }
     .project-cate {
         padding: 8px 0;
+    }
+
+    .category__btn {
+        font-size: var(--font-small);
+    }
+
+    .category__cnt {
+        font-size: 8px;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        top:-10px;
+        left: -4px;
+    }
+
+    .work__projects img {
+        width: 150px;
+    }
+
+    #contact i {
+        font-size: var(--font-medium);
+        padding: 16px;
+    }
+
+    .arrow-up {
+        bottom: 16px;
+        right:16px;
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
     }
 }
