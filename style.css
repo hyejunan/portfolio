@@ -252,7 +252,7 @@ p {
 }
 
 .about__edu {
-    padding: 40px 0;
+    padding: 40px 80px;
     border-top: 1px solid var(--color-dark-grey);
 }
 
@@ -348,7 +348,7 @@ p {
 }
 
 .project__categories {
-    padding: 20px 40px;
+    padding: 20px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -394,16 +394,22 @@ p {
 
 .work__projects {
     padding: 40px 60px;
+    margin:0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     white-space: nowrap;
-    overflow-x: scroll;
+    overflow-x: auto;
     transition: all var(--animation-duration) ease-in;
+}
+
+.work__projects a {
+    display: inline-block;
 }
 
 .work__projects img {
     width: 250px;
     border-radius: 4px;
+    display: inline-block;
 }
 
 .work__projects.anim-out {
@@ -557,6 +563,10 @@ p {
         text-align: center;
     }
 
+    .about__edu {
+        padding: 40px 0;
+    }
+
     .about__edu__title {
         font-size: var(--font-regular);
     }
@@ -597,6 +607,7 @@ p {
         width: 80px;
     }
     .navbar__menu {
+        font-size: var(--font-small);
         width: 100%;
         flex-direction: column;
         text-align: center;
@@ -616,7 +627,7 @@ p {
     }
 
     #skills {
-        padding: 16px 0;
+        padding: 40px 0;
     }
 
     #skills p {
@@ -625,6 +636,7 @@ p {
 
     .skillset {
         flex-direction: column;
+        align-items: center;
         padding: 16px;
     }
 
@@ -637,8 +649,13 @@ p {
         font-size: 16px;
     }
 
+    #projects {
+        padding-top: 40px;
+    }
+
     .project__categories {
         flex-direction: column;
+        padding: 20px 40px;
     }
     .project-cate {
         padding: 8px 0;
