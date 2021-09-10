@@ -6,8 +6,16 @@ navbarMenu.addEventListener('click', (event) => {
     if(link == null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
 });
+
+// Navbar toggle btn for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
+
 
 // Make about slowly fade to transparent as the window scroll down
 const about = document.querySelector('#about');

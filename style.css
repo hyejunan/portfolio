@@ -60,6 +60,9 @@ textarea {
     outline: none;
     box-shadow: none;
     appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
 }
 
 button:focus,
@@ -176,7 +179,7 @@ p {
 /* Toggle button */
 .navbar__toggle-btn {
     position: absolute;
-    top: 30px;
+    top: 24px;
     right: 32px;
     color: var(--color-black);
     font-size: var(--font-medium);
@@ -507,26 +510,34 @@ p {
 
 @media screen and (max-width: 768px) {
     #navbar {
-        height: 86.75px;
+        padding: 16px;
     }
 
     .navbar__toggle-btn {
         display: block;
     }
-
     .navbar__container {
-        display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     .navbar__logo img{
-        position: absolute;
-        display: none;
+        padding-top: 8px;
+        padding-bottom: 6px;
+        width: 100px;
     }
     .navbar__menu {
         width: 100%;
         flex-direction: column;
         text-align: center;
         display: none;
+    }
+
+    .navbar__container li {
+        display: block;
+    }
+
+    .navbar__menu.open {
+        display: block;
     }
 
     .about__edu__item {
