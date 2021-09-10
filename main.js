@@ -42,11 +42,17 @@ const pjBtnContainer = document.querySelector('.project__categories');
 const pjContainer = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
 
-pjBtnContainer.addEventListener('click', ()=>{
+pjBtnContainer.addEventListener('click', (e)=>{
     const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
     if(filter == null) {
         return;
     }
+
+    // Remove selection from the previous btn and select the new one
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+    e.target.classList.add('selected');
     pjContainer.classList.add('anim-out');
     setTimeout(() => {
         projects.forEach((project) => {
