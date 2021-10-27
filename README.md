@@ -17,4 +17,4 @@ Project is created with:
 * Figma
 	
 ## Link
-To visit portfolio website, [Click Here!](hyejunan.github.io/portfolio/)
+To visit portfolio website, [Click Here!](https://hyejunan.github.io/portfolio/)
